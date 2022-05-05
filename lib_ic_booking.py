@@ -36,6 +36,8 @@ def init(tmp_day,class_flag):
     #     day = (today+datetime.timedelta(days=2)).strftime("%Y%m%d")
     if not tmp_day:
         day = (today+datetime.timedelta(days=1)).strftime("%Y%m%d")
+    else:
+        day = tmp_day
     if class_flag==1:
         min_user = 2
         max_user = 6
